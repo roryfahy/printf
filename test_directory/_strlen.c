@@ -5,7 +5,7 @@
  *
  * Return: The length of the string
  */
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 	int i = 1;
 
@@ -14,4 +14,5 @@ int _strlen(char *s)
 		s++;
 		i++;
 	}
+	return (i);
 }
