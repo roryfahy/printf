@@ -1,8 +1,9 @@
 #ifndef _HOLBERTON_H_
 #define _HOLBERTON_H_
+#include <stdarg.h>
 
 /*helper functions*/
-int _strlen(char *s);
+int _strlen(const char *s);
 
 /**
  * struct data_types - the types of data we can have
