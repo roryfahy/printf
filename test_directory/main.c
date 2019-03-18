@@ -9,6 +9,6 @@
  */
 int main(void)
 {
-	_printf("hello kitty");
+	_printf("hello k%ctty\n", 'i');
 	return (0);
 }
