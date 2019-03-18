@@ -9,6 +9,6 @@
  */
 int main(void)
 {
-	_printf("hello k%ctty\n", 'i');
+	_printf("%an int is d\n", 1);
 	return (0);
 }

@@ -14,12 +14,11 @@ int _printf(const char *format, ...)
 	int bytes;
 	int i = 0;
 	int j = 0;
-	f_mod c_spes[]=
-	{
+	f_mod c_spes[] = {
 		{'c', _wchar},
 		/* {'s', _wstr}, */
-		/* {'d', _wd}, */
-		/* {'i', _wint}, */
+		{'d', _wd},
+		/* {'i', _wint},*/
 		{'\0', NULL}
 	};
 
