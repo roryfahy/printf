@@ -31,12 +31,11 @@ int _printf(const char *format, ...)
 			{
 				if (format[i] == c_spes[j].fm)
 				{
-					
 				}
 				j++;
 			}
 
-		write(1, format[i], 1);
+		write(1, &format[i], 1);
 		i++;
 	}
 	bytes = i;
