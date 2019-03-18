@@ -11,7 +11,34 @@
 int _printf(const char *format, ...)
 {
 	int bytes;
+	int i = 0;
+	int j = 0;
+	f_mod c_spes[]=
+	{
+		{'c', _wchar},
+		{'s', _wstr},
+		{'d', _wd},
+		{'i', _wint},
+		{'\0', NULL},
+	};
 
-	bytes = write(1, format, _strlen(format));
+	while (format != NULL && format[i] != '\0')
+	{
+		if (format[i] == '%')
+		{
+			i++;
+			while (c_spes[j].fm != NULL)
+			{
+				if (format[i] == c_spes[j].fm)
+				{
+					
+				}
+				j++;
+			}
+
+		write(1, format[i], 1);
+		i++;
+	}
+	bytes = i;
 	return (bytes);
 }
