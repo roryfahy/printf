@@ -31,8 +31,8 @@ int main(void)
 	/* _printf("%c\n", ''); */
 	/* printf("%c\n", ''); */
 
-	_printf("%s\n", "");
-	printf("%s\n", "");
+	_printf("%s\n", "\0");
+	printf("%s\n", "\0");
 
 	_printf("");
 	/* printf(""); */
