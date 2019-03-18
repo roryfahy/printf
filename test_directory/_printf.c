@@ -16,8 +16,8 @@ int _printf(const char *format, ...)
 	int j = 0;
 	f_mod c_spes[] = {
 		{'c', _wchar},
-		/* {'s', _wstr}, */
-		{'d', _wd},
+		{'s', _wstr},
+		/* {'d', _wd}, */
 		/* {'i', _wint},*/
 		{'\0', NULL}
 	};

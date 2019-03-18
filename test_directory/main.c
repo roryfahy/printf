@@ -9,6 +9,8 @@
  */
 int main(void)
 {
-	_printf("%an int is d\n", 1);
+	char *kitty = "hello kitty";
+
+	_printf("%s\n", kitty);
 	return (0);
 }
