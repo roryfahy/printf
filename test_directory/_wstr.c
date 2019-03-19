@@ -8,10 +8,12 @@
  *
  * Return: nothing
  */
-void _wstr(va_list list)
+int _wstr(va_list list)
 {
-	 char *cptr = va_arg(list, char *);
+	int count = 0;
+	char *cptr = va_arg(list, char *);
 
-	for (; cptr && *cptr; cptr++)
+	for (; cptr && *cptr; cptr++, count++)
 		write(1, cptr, 1);
+	return (count);
 }
