@@ -14,14 +14,23 @@ char *_itoa(int num, char *buff_boi)
 {
 	int i = 0;
 	int r;
+	int rep = num;
 
+	if (num < 0)
+	{
+		num = -num;
+	}
 	do {
 		r = num % 10;
 		buff_boi[i] = r + '0';
 		num /= 10;
 		i++;
 	} while (num != 0);
-	buff_boi[i] = '\0';
+	if (rep < 0)
+	{
+		buff_boi[i] = '-';
+		i++;
+	}
 	_rev(buff_boi);
 	return (buff_boi);
 }

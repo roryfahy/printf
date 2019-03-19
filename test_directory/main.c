@@ -39,15 +39,17 @@ int main(void)
 	/* _printf("%c\n", 5000); */
 	/* printf("%c\n", 5000); */
 
-
+#define UGH fflush(stdout); fsync(1);
 /* new tests */
-	printf("\n\n\n new test that haven't passed yet");
+	printf("\n\n\n new test that haven't passed yet"); UGH
 
+	_printf("Negative:[%d]\n", -762534); UGH
+	printf("Negative:[%d]\n", -762534); UGH
 
 	/* _printf(""); */
 	/* printf(""); */
-	_printf("%((hello\n");
-	/* printf("%((hello\n"); */
+	_printf("%((hello\n"); UGH
+	printf("%((hello\n"); UGH
 
 	return (0);
 }
