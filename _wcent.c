@@ -3,14 +3,14 @@
 #include <unistd.h>
 #include "holberton.h"
 /**
- * _wchar - write a char
+ * _wcent - write a percent sign
  * @list: va_list
  *
- * Return: nothing
+ * Return: 1
  */
-int _wchar(va_list list)
+int _wcent(__attribute__ ((unused)) va_list list)
 {
-	int c = va_arg(list, int);
+	char c = '%';
 
 	write(1, &c, 1);
 	return (1);
