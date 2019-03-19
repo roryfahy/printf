@@ -14,6 +14,6 @@ int _wstr(va_list list)
 	char *cptr = va_arg(list, char *);
 
 	for (; cptr && *cptr; cptr++, count++)
-		 write(1, cptr, 1);
+		write(1, cptr, 1);
 	return (count);
 }

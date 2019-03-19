@@ -16,15 +16,8 @@ int _printf(const char *format, ...)
 	int bytes;
 	int count = 0;
 	int i = 0;
-	int j = 0;
 	int num_of_percents = 0;
-	f_mod c_spes[] = {
-		{'c', _wchar},
-		{'s', _wstr},
-		/* {'d', _wd}, */
-		/* {'i', _wint},*/
-		{'\0', NULL}
-	};
+	int (*result)(va_list);
 
 	if (format == NULL)
 		return (-1);
@@ -35,17 +28,11 @@ int _printf(const char *format, ...)
 		{
 			num_of_percents++;
 			i++;
-			j = 0;
-			while (c_spes[j].c != '\0')
-			{
-				if (format[i] == c_spes[j].c)
-				{
-					count += c_spes[j].fptr(list);
-					i++;
-					break;
-				}
-				j++;
-			}
+			result = f_select(format[i]);
+			if (result == NULL)
+				return (-1);
+			count = result(list);
+			i++;
 		}
 		write(1, &format[i], 1);
 		i++;

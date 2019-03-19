@@ -14,8 +14,8 @@ int main(void)
 	int len;
 	int len2;
 
-	len = _printf("Let's try to printf a simple sentence.\n");
-	len2 = printf("Let's try to printf a simple sentence.\n");
+	len = _printf("Let's %s\n", kitty);
+	len2 = printf("Let's %s\n", kitty);
 	_printf("Character:[%c]\n", 'H');
 	printf("Character:[%c]\n", 'H');
 	_printf("String:[%s]\n", "I am a string !");
@@ -24,18 +24,20 @@ int main(void)
 	printf("Length:[%d, %i]\n", len, len2);
 
 /* new tests */
-	printf("\n\n\n new test that haven't passed yet");
-	_printf("%c\n", 5000);
-	printf("%c\n", 5000);
+/* 	printf("\n\n\n new test that haven't passed yet"); */
+/* 	_printf("%c\n", 5000); */
+/* 	printf("%c\n", 5000); */
 
-	/* _printf("%c\n", ''); */
-	/* printf("%c\n", ''); */
+/* 	/\* _printf("%c\n", ''); *\/ */
+/* 	/\* printf("%c\n", ''); *\/ */
 
-	_printf("%s\n", "\0");
-	printf("%s\n", "\0");
+/* 	_printf("%s\n", "\0"); */
+/* 	printf("%s\n", "\0"); */
 
-	_printf("");
-	/* printf(""); */
+/* 	_printf(""); */
+/* 	/\* printf(""); *\/ */
+/* 	_printf("%lhello\n"); */
+/* 	printf("%lhello\n"); */
 
 	return (0);
 }
