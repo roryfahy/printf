@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 			result = f_select(format[i]);
 			if (result == NULL)
 				return (-1);
-			count = result(list);
+			count += result(list);
 			i++;
 		}
 		write(1, &format[i], 1);
