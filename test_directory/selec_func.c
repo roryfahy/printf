@@ -16,7 +16,7 @@ int (*f_select(char s))(va_list)
 	f_mod c_spes[] = {
 		{'c', _wchar},
 		{'s', _wstr},
-		/* {'d', _wd}, */
+		{'d', _wd},
 		/* {'i', _wint},*/
 		{'\0', NULL}
 	};

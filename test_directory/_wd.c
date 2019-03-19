@@ -8,17 +8,9 @@
  *
  * Return: nothing
  */
-void _wd(va_list list)
+int _wd(va_list list)
 {
+	char buff[11];
 	int i  = va_arg(list, int);
-	if (i < 0)
-	{
-		write(1 ,"-", 1);
-		n = -n;
-	}
-	if (n / 10)
-	{
-		print_number(n / 10);
-	}
-	write(1, , 100);
+	char *str = _itoa(i, buff,
 }
