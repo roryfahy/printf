@@ -11,7 +11,17 @@
  */
 char *_itoa(int num, char *buff_boi)
 {
-	char *ret;
+	int i = 0;
+	int r;
 
-	return(ret);
+	while (num != 0)
+	{
+		r = num % 10;
+		buff_boi[i] = r + '0';
+		num /= 10;
+		i++;
+	}
+	buff_boi[i] = '/0';
+ 	rev_str(buff_boi);
+	return(buff_boi);
 }
