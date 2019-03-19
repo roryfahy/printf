@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdarg.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -21,7 +22,7 @@ char *_itoa(int num, char *buff_boi)
 		num /= 10;
 		i++;
 	}
-	buff_boi[i] = '/0';
- 	rev_str(buff_boi);
-	return(buff_boi);
+	buff_boi[i] = '\0';
+	_rev(buff_boi);
+	return (buff_boi);
 }

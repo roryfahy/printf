@@ -18,6 +18,7 @@ int (*f_select(char s))(va_list)
 		{'s', _wstr},
 		{'d', _wd},
 		{'i', _wd},
+		{'%', _wcent},
 		{'\0', NULL}
 	};
 

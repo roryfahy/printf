@@ -4,7 +4,7 @@
 #include "holberton.h"
 /**
  * _rev - reverse a string
- * @str: input string
+ * @buff_boi_cpy: input string
  *
  * Return: nothing
  */
@@ -21,5 +21,4 @@ void _rev(char *buff_boi_cpy)
 		buff_boi_cpy[i] = buff_boi_cpy[j];
 		buff_boi_cpy[j] = temp;
 	}
-	buff_boi_cpy[k];
 }

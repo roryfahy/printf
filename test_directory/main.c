@@ -14,6 +14,9 @@ int main(void)
 	int len;
 	int len2;
 
+	_printf("%%\n");
+	_printf("%idc is fun\n", 145);
+	printf("%dc is fun\n", 145);
 	len = _printf("Let's %s\n", kitty);
 	len2 = printf("Let's %s\n", kitty);
 	_printf("Character:[%c]\n", 'H');
