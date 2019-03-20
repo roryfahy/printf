@@ -27,8 +27,8 @@ int _wrev(va_list list);
 typedef struct data_types
 {
 	char c;
-	int (*fptr) (va_list);
-}f_mod;
+	int (*fptr)(va_list);
+} f_mod;
 
 /* core functions */
 int _printf(const char *format, ...);
