@@ -44,6 +44,7 @@ SEE ALSO
         Betty(1)
 
 BUGS
+
        No known bugs.
 
 AUTHOR
