@@ -19,6 +19,7 @@ int (*f_select(char s))(va_list)
 		{'d', _wd},
 		{'i', _wd},
 		{'%', _wcent},
+		{'r', _wrev},
 		{'\0', NULL}
 	};
 
@@ -29,6 +30,5 @@ int (*f_select(char s))(va_list)
 			return (c_spes[j].fptr);
 		j++;
 	}
-/* were returning null but this my cause big problem?? */
 	return (NULL);
 }

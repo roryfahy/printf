@@ -10,12 +10,15 @@ int _strlen(const char *s);
 void _rev(char *);
 char *_itoa(int, char *);
 int _wIntStr(char *istr);
+char *_revr(char *str);
 
 /* format functions */
 int _wchar(va_list);
 int _wstr(va_list);
 int _wd(va_list);
 int _wcent(__attribute__ ((unused)) va_list list);
+int _wrev(va_list list);
+
 /**
  * struct data_types - the types of data we can have
  * @c: char data type

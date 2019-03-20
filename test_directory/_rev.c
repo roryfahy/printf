@@ -1,6 +1,7 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <stdio.h>
 #include "holberton.h"
 /**
  * _rev - reverse a string
