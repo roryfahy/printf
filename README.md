@@ -1,5 +1,5 @@
 NAME
-        _printf
+        _printf 
 
 SYNOPSIS
        #include holberton.h
