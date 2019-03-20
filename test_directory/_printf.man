@@ -1,0 +1,42 @@
+.TH man 3 "19 March 2019" "0.1" "_printf man page"
+.SH NAME
+ _printf
+.SH SYNOPSIS
+.B #include "holberton.h"
+
+.B int _printf(const char *
+.I format
+.B , ...);
+.SH DESCRIPTION
+The _printf function replicates the functionality of the regular printf. It is
+currently in beta and open to contributors. If you or someone you know has been\ diagnosed with no_checker_checks syndrome, helping us complete _printf may be the cure.
+
+.B Return Value
+
+Upon successful return, _printf will return the number of the characters printed.
+
+.B % Modifier
+
+By using the % modifier before an
+.I <option>
+command, you are able to print out different types of output.
+.SH OPTIONS
+.I c
+- Print a char
+
+.I s
+- Print a string
+
+.I d
+- Print an integer
+
+.I i
+- The same as
+.I d
+, print an integer
+.SH SEE ALSO
+ Betty(1)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Kyle Litscher & Rory Fahy
