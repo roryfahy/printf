@@ -1,12 +1,15 @@
 NAME
+       
         _printf 
 
 SYNOPSIS
+       
        #include holberton.h
 
        int _printf(const char * format , ...);
        
 DESCRIPTION
+       
        The  _printf  function  replicates  the  functionality  of the regular
        printf. It is currently in beta and open to contributors.  If  you  or
        someone  you  know has been diagnosed with no_checker_checks syndrome,
@@ -23,6 +26,7 @@ DESCRIPTION
        print out different types of output.
 
 OPTIONS
+       
        c - Print a char
 
        s - Print a string
@@ -36,10 +40,12 @@ OPTIONS
        r - Print a string in reverse
 
 SEE ALSO
+       
         Betty(1)
 
 BUGS
        No known bugs.
 
 AUTHOR
+       
        Kyle Litscher & Rory Fahy
