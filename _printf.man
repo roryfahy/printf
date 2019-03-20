@@ -34,6 +34,12 @@ command, you are able to print out different types of output.
 - The same as
 .I d
 , print an integer
+
+.I %
+- Print out a percent sign
+
+.I r
+- Print a string in reverse
 .SH SEE ALSO
  Betty(1)
 .SH BUGS
